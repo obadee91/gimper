@@ -18,12 +18,12 @@ const MobileNav = () => {
                 <Image 
                     src="/assets/images/logo-text.svg"
                     alt='logo'
-                    width={180}
-                    height={28}
+                    width={82}
+                    height={30}
                 />
             </Link>
 
-            <nav className='flex gap-2'>
+            <nav className='flex gap-2 '>
                 <SignedIn>
                     <UserButton afterSignOutUrl='/' />
 
@@ -37,22 +37,21 @@ const MobileNav = () => {
                                 className="cursor-pointer"
                             />
                         </SheetTrigger>
-                        <SheetContent className='sheet-content sm:w-64'>
+                        <SheetContent className='sheet-content sm:w-64 bg-[#f7f7f8]'>
                             <>
-                                <Image 
+                                {/* <Image 
                                     src="/assets/images/logo-text.svg"
                                     alt='logo'
-                                    width={152}
-                                    height={23}
-                                />
+                                    width={82}
+                                    height={30}
+                                /> */}
+                                <span>Gimper</span>
                                 <ul className='header-nav_elements'>
                                     {navLinks.map((link) => {
                                         const isActive = link.route === pathname
                                         return (
                                             <li 
-                                                className={`${isActive && 
-                                                    'gradient-text'} p-18 flex
-                                                    whitespace-nowrap text-dark-700`}
+                                                className={`${isActive ? 'bg-white shadow-[0px_0px_0px_1px_rgba(25,_28,_33,_0.08),_0px_1px_0px_0px_rgba(25,_28,_33,_0.04),_0px_2px_3px_-1px_rgba(0,_0,_0,_0.06)] rounded-lg text-[#2F302D]' : 'text-[#5e606e]'}`}
                                                     key={link.route} 
                                                     >
                                                 <Link className='sidebar-link
