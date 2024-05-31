@@ -153,7 +153,7 @@
   }
 
   .p-16-regular {
-    @apply font-normal text-[16px] leading-[140%];
+    @apply font-normal text-[16px] leading-[140%] text-[#9394a1];
   }
 
   /* 14 */
@@ -339,7 +339,9 @@
   .mobile-sidebar-link {
     @apply p-16-semibold flex size-full gap-4 p-4;
   }
-  
+  .active {
+    @apply hover:text-[#2f302d];
+  }
 
 
   /* TransformationForm Component */

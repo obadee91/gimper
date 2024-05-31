@@ -36,7 +36,7 @@ const Sidebar = () => {
                                                 alt='logo'
                                                 width={24}
                                                 height={24}
-                                                className={`${isActive && 'brightness-200'}`}
+                                                className={`${isActive && 'brightness-50'}`}
                                             />
                                             {link.label}
                                         </Link>
@@ -56,7 +56,7 @@ const Sidebar = () => {
                                                 alt='logo'
                                                 width={24}
                                                 height={24}
-                                                className={`${isActive && 'brightness-200'}`}
+                                                className={`${isActive && 'brightness-50'} `}
                                             />
                                             {link.label}
                                         </Link>
@@ -64,7 +64,7 @@ const Sidebar = () => {
                                 )
                             })}
 
-                            <li className='"flex-center cursor-pointer gap-2 p-5'>
+                            <li className='"flex-center cursor-pointer gap-2 p-6'>
                                 <UserButton afterSignOutUrl='/' showName />
                             </li>
                         </ul>
